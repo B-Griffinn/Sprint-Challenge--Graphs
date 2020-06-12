@@ -1,7 +1,6 @@
 from room import Room
 from player import Player
 from world import World
-from util import Stack
 import random
 from ast import literal_eval
 
@@ -28,6 +27,7 @@ player = Player(world.starting_room)
 # Fill this out with directions to walk
 # traversal_path = ['n', 'n']
 traversal_path = []
+
 # adding to check visited rooms
 prev_rooms_path = []
 
@@ -45,7 +45,7 @@ def flip_dir(dir):
     if dir == "e":
         return "w"
     else:
-        return "error"
+        return "Flip directions function issue."
 
 
 # initialize our first room in the visited dict with a list of all exits for that room
